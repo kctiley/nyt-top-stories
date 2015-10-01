@@ -4,7 +4,7 @@ var unirest = require('unirest');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.redirect('top_stories', { title: 'NYT Top Stories - index page' });
+  res.redirect('/top_stories', { title: 'NYT Top Stories - index page' });
 });
 
 
