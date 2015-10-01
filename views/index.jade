@@ -2,4 +2,21 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to top NYT stories list
+  table
+    thead
+      tr
+        td
+          h2 Title: 
+        td
+          h2 URL:
+        td
+          h2 Published:
+
+      for eachStory in allStories
+        tr
+          td= eachStory.title
+          td
+            a(href= eachStory.url)= eachStory.url
+          td= eachStory.published_date
+ 
